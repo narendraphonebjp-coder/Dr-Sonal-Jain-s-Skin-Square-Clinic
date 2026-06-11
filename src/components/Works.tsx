@@ -13,9 +13,9 @@ export default function Works({ onConsultationClick }: WorksProps) {
   const departments = [
     {
       id: "I",
-      category: "AESTHETIC DERMATOLOGY",
-      title: "Laser Cellular Rejuvenation",
-      description: "Patient, 32. Focused skin resurfacing to restore healthy epidermal barrier strength, clear tone unevenness, and calm vascular hyperpigmentations. Three months follow-up post-care.",
+      category: "INTEGRATIVE & SPECIALTY DERMATOLOGY",
+      title: "Laser Cellular Rejuvenation & Resurfacing",
+      description: "Focused skin resurfacing to restore healthy epidermal barrier strength, clear skin tone unevenness, and calm vascular hyperpigmentation. Showcasing 3 months follow-up post-care under clinical supervision.",
       duration: "45 mins",
       recovery: "2 days",
       beforeFilter: "contrast-[0.85] saturate-[0.70] brightness-[0.88] grayscale-[10%]",
@@ -23,9 +23,9 @@ export default function Works({ onConsultationClick }: WorksProps) {
     },
     {
       id: "II",
-      category: "COSMETIC COLLAGEN INFUSION",
-      title: "Micro-Nutrient Needleless Therapy",
-      description: "Patient, 44. Comprehensive facial hydration and micro-circulatory flow lifting. Targeted skin revitalization using custom active serum infusions. Shown 2 weeks post-treatment.",
+      category: "PREVENTIVE & WELLNESS MEDICINE",
+      title: "Advanced Metabolic & Skin Hydration",
+      description: "Comprehensive facial hydration and cellular flow stimulation. Targeted health revitalization using custom active micro-nutrient infusions. Shown 2 weeks post-treatment.",
       duration: "60 mins",
       recovery: "0 days (Immediate)",
       beforeFilter: "contrast-[0.90] saturate-[0.80] brightness-[0.92] blur-[0.4px]",

@@ -17,15 +17,16 @@ export default function Contact() {
   const [validatedCode, setValidatedCode] = useState<string | null>(null);
 
   const clinics = [
-    { name: "Vesu Flagship Clinic (Avadh Arena)", value: "vesu" }
+    { name: "Velocity Business Hub Suite, Adajan", value: "velocity" },
+    { name: "Surat Central Clinic", value: "surat-central" }
   ];
 
   const specialties = [
-    { name: "Aesthetic Dermatology & Lasers", value: "aesthetics-lasers" },
-    { name: "Acne, Scars & Pigmentation", value: "acne-pigment" },
-    { name: "Clinical Dermatology & Skincare", value: "clinical" },
-    { name: "Hair Restoration & Scalp Care", value: "hair-care" },
-    { name: "Medical Facial Hydration & Peel", value: "facial-hydration" }
+    { name: "Clinical Dermatology & Acne Treatment", value: "clinical-dermatology" },
+    { name: "Advanced Laser Treatments & Scar Repair", value: "advanced-lasers" },
+    { name: "Cosmetology, Aesthetics & Peels", value: "cosmetology-aesthetics" },
+    { name: "Hair Loss, Restore & Trichology Solutions", value: "hair-trichology" },
+    { name: "Skin Resurfacing & Radiance Peels", value: "skin-resurfacing" }
   ];
 
   const handleSubmit = (e: React.FormEvent) => {
@@ -36,14 +37,14 @@ export default function Contact() {
     }
 
     // Save locally
-    const existingBookings = JSON.parse(localStorage.getItem('perlman_appointments') || '[]');
+    const existingBookings = JSON.parse(localStorage.getItem('midas_appointments') || '[]');
     const newBooking = {
       ...form,
       timestamp: new Date().toISOString(),
-      id: "PC-" + Math.floor(1000 + Math.random() * 9000)
+      id: "MC-" + Math.floor(1000 + Math.random() * 9000)
     };
     existingBookings.push(newBooking);
-    localStorage.setItem('perlman_appointments', JSON.stringify(existingBookings));
+    localStorage.setItem('midas_appointments', JSON.stringify(existingBookings));
 
     setValidatedCode(newBooking.id);
     setSubmitted(true);
@@ -225,7 +226,7 @@ export default function Contact() {
                       Consultation Request Received
                     </h2>
                     <p id="success-message" className="text-sm text-brand-secondary font-sans font-light leading-relaxed">
-                      Thank you for trusting Skin Square Clinic, <strong>{form.fullName}</strong>. A clinic patient coordinator will contact you at <strong>{form.email}</strong> within four hours to arrange your visit parameters.
+                      Thank you for trusting MIDAS Skin Hair & Laser Clinic, <strong>{form.fullName}</strong>. A clinic patient care representative will contact you at <strong>{form.email}</strong> shortly to finalize your appointment scheduling.
                     </p>
                     
                     {/* Appointment Receipt Details */}
@@ -263,35 +264,60 @@ export default function Contact() {
           {/* Clinic 1 */}
           <div id="contact-clinic-vesu" className="space-y-4">
             <h3 className="font-serif text-lg text-brand-primary font-light uppercase tracking-wider">
-              VESU FLAGSHIP
+              PRIME LOCATIONS
             </h3>
             
-            <div className="space-y-3 font-mono text-[10px] tracking-widest text-brand-secondary uppercase">
-              <div className="flex items-start gap-2.5">
-                <MapPin className="w-3.5 h-3.5 text-brand-accent shrink-0 mt-0.5" />
-                <span className="leading-relaxed normal-case font-sans text-xs text-brand-secondary font-light">
-                  312, 313, 3rd Floor, Avadh Arena,<br />
-                  VIP Road, above Croma Showroom,<br />
-                  Vesu, Surat, Gujarat 395007
-                </span>
+            <div className="space-y-6 font-mono text-[10px] tracking-widest text-brand-secondary uppercase">
+              <div className="space-y-2">
+                <div className="font-serif text-xs text-brand-primary normal-case font-medium">Velocity Business Hub Suite</div>
+                <div className="flex items-start gap-2.5">
+                  <MapPin className="w-3.5 h-3.5 text-brand-accent shrink-0 mt-0.5" />
+                  <span className="leading-relaxed normal-case font-sans text-xs text-brand-secondary font-light">
+                    1008, 10th Floor, Velocity Business Hub,<br />
+                    Near Madhuvan Circle, L.P. Savani Road,<br />
+                    Adajan, Surat, Gujarat 395009
+                  </span>
+                </div>
+              </div>
+
+              <div className="space-y-2">
+                <div className="font-serif text-xs text-brand-primary normal-case font-medium">Surat Central Clinic</div>
+                <div className="flex items-start gap-2.5">
+                  <MapPin className="w-3.5 h-3.5 text-brand-accent shrink-0 mt-0.5" />
+                  <span className="leading-relaxed normal-case font-sans text-xs text-brand-secondary font-light">
+                    Midas Tower, Near Circle Plaza, L.P. Savani Road,<br />
+                    Surat, Gujarat 395009
+                  </span>
+                </div>
+              </div>
+
+              <div className="pb-2">
+                <a
+                  id="contact-google-maps-btn"
+                  href="https://maps.app.goo.gl/btuFoMPtnutwMn838"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="w-full text-center block bg-brand-primary text-brand-bg text-[10px] font-mono tracking-widest uppercase py-3 px-4 hover:opacity-90 transition-opacity"
+                >
+                  LAUNCH GOOGLE MAPS DIRECTORY
+                </a>
               </div>
               
-              <div className="flex items-center gap-2.5">
+              <div className="flex items-center gap-2.5 border-t border-brand-border pt-4">
                 <Phone className="w-3.5 h-3.5 text-brand-accent" />
-                <span className="font-sans text-xs font-light text-brand-secondary normal-case">+91 91068 52367</span>
+                <span className="font-sans text-xs font-light text-brand-secondary normal-case">+91 97262 50505</span>
               </div>
 
               <div className="flex items-center gap-2.5">
                 <Mail className="w-3.5 h-3.5 text-brand-accent" />
-                <span className="font-sans text-xs font-light text-brand-secondary normal-case lowercase">skinsquareofficial@gmail.com</span>
+                <span className="font-sans text-xs font-light text-brand-secondary normal-case lowercase font-medium">info@midasskinclinic.com</span>
               </div>
 
               <div className="flex items-start gap-2.5">
                 <Clock className="w-3.5 h-3.5 text-brand-accent shrink-0 mt-0.5" />
                 <span className="leading-relaxed normal-case font-sans text-xs text-brand-secondary font-light">
-                  Monday — Saturday<br />
-                  10:00 — 13:00, 17:00 — 20:00<br />
-                  Sunday: Closed
+                  Monday — Saturday: 10:30 AM — 8:30 PM<br />
+                  Sunday: Closed (Consultation by Appointment)
                 </span>
               </div>
             </div>
@@ -299,7 +325,7 @@ export default function Contact() {
 
           {/* Notice footer */}
           <div id="contact-notice" className="border-t border-brand-border pt-6 text-[11px] font-sans text-brand-secondary/70 leading-relaxed font-light italic">
-            All consultations are conducted under board-certified clinical dermatologists. A scheduling deposit may apply and is fully credited toward subsequent corrective skin care or laser programs.
+            Our clinical dermatologists and expert technicians are board-certified, accepting medical skin care and protective aesthetic laser consultations. Telemedicine advice can be arranged.
           </div>
         </div>
       </section>

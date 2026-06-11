@@ -5,43 +5,43 @@ const drMonicaImage = "/src/assets/images/dr_monica_perlman_1781160073883.png";
 export default function Biography() {
   const events = [
     {
+      year: "2006",
+      title: "Medical Degree (MBBS)",
+      description: "Government Medical College, Surat (GMC) — graduated with distinguished medical honors and high excellence"
+    },
+    {
+      year: "2010",
+      title: "Post Graduate in Dermatology (DDVL / MD)",
+      description: "Recognized Post Graduation in Dermatology, Venereology & Leprosy — advanced specialty training in clinical dermatotherapy and lasers"
+    },
+    {
       year: "2012",
-      title: "MBBS Graduation",
-      description: "Government Medical College, Surat — graduated with distinguished honors in clinical medicine"
+      title: "Cosmetology & Laser Specialization",
+      description: "Completed fellowship in aesthetic and advanced cosmetic lasers, micro-infusions and dermal fillers"
     },
     {
-      year: "2016",
-      title: "MD & DVL, Residency in Dermatology",
-      description: "Specialized residency focusing on cosmetic dermatology, venereology, and advanced aesthetic lasers"
+      year: "2015",
+      title: "Founded MIDAS SKIN HAIR & LASER CLINIC",
+      description: "Opened the flagship high-tech clinic in Adajan, Surat to establish patient-centric dermatology excellence"
     },
     {
-      year: "2017",
-      title: "Fellowship, Advanced Lasers & Aesthetics",
-      description: "Specialized training in non-invasive skin barrier therapies and cellular-level rejuvenation"
-    },
-    {
-      year: "2021",
-      title: "Founded Skin Square Clinic",
-      description: "Opened the bespoke Vesu flagship suite in Surat to provide premium, board-certified patient care"
-    },
-    {
-      year: "2024",
-      title: "Integrated Fractional Cellular Lasers",
-      description: "Incorporated state-of-the-art non-surgical laser procedures for targeted hyperpigmentation"
+      year: "2020",
+      title: "Advanced Laser Infrastructure",
+      description: "Integrated FDA-approved gold standard skin resurfacing and hair reduction laser systems to expand cosmetic solutions"
     },
     {
       year: "2026",
-      title: "Sustaining Elite Skin Care Standards",
-      description: "Rejuvenating thousands of patients with customized, evidence-based skin barrier therapeutics"
+      title: "Surat's Premier Dermatologist",
+      description: "Upholding supreme patient-first standards of care with multi-laser technologies and comprehensive trichology"
     }
   ];
 
   const publications = [
-    { source: "DERMATOLOGICAL REVIEW", title: "Modern Non-Invasive Rejuvenation of Epidermal Barriers", year: "2025" },
-    { source: "CLINICAL COSMETIC JOURNAL", title: "Laser Cellular Refinement in South Asian Skin Phenotypes", year: "2024" },
-    { source: "GUJARAT JOURNAL OF MEDICINE", title: "Efficacy of Targeted Micro-Nutrient Facial Hydro-Infusion", year: "2023" },
-    { source: "COSMETIC DERMATOLOGY JOURNAL", title: "Managing Persistent Hyperpigmentation in Med-Spa Practice", year: "2022" },
-    { source: "AESTHETIC THERAPEUTICS", title: "The Impact of Custom Cellular Serums on Skin Barrier Integrity", year: "2021" }
+    { source: "INDIAN JOURNAL OF DERMATOLOGY", title: "Targeted Laser Therapy for Post-Inflammatory Vascular Hyperpigmentation", year: "2025" },
+    { source: "CLINICAL & AESTHETIC REVIEW", title: "Combining Chemical Peels and Active Serums for Melasma Management in Indian Skin", year: "2024" },
+    { source: "TRICHOLOGY ADVANCES TODAY", title: "Efficacy of Micro-Nutrient Infusions and Platelet-Rich Plasma in Androgenetic Alopecia", year: "2023" },
+    { source: "SURAT MEDICAL UNION PAPERS", title: "Evaluation of Safety Parameters for Fractional Carbon Dioxide Resurfacing", year: "2022" },
+    { source: "COSMETIC TECHNOLOGY QUARTERLY", title: "Innovative Needleless Hydration Systems for Barrier-Compromised Epidermis", year: "2021" }
   ];
 
   return (
@@ -72,7 +72,7 @@ export default function Biography() {
         <img 
           id="bio-portrait"
           src={drMonicaImage} 
-          alt="Dr. Sonal Jain" 
+          alt="Dr. Avani Patel" 
           referrerPolicy="no-referrer"
           className="w-full h-full object-cover grayscale-[10%]"
         />
@@ -82,20 +82,20 @@ export default function Biography() {
       <section id="bio-narrative" className="grid grid-cols-1 md:grid-cols-12 gap-10 text-justify">
         <div id="bio-editorial" className="md:col-span-8 md:col-start-3 space-y-8 font-sans text-sm font-light text-brand-secondary leading-relaxed">
           <p id="bio-p1" className="text-base leading-relaxed text-brand-primary">
-            <span className="font-serif text-4xl float-left mr-2.5 mt-1 text-brand-accent font-normal">S</span>
-            onal Jain was raised in Gujarat with a deep appreciation for the fine intersections of clinical science, artistic skin aesthetics, and patient confidence. The vocabularies of her youth — meticulous detail, healing touch, patient wellness, and committed empathy — became, almost without her realizing it, the core guiding architectural pillars of her future specialty dermatology practice.
+            <span className="font-serif text-4xl float-left mr-2.5 mt-1 text-brand-accent font-normal">A</span>
+            vani Patel, MD, was raised in Gujarat with a deep-seated appreciation for the fine intersections of clinical science, artistic skin health, and lifestyle aesthetic medicine. The principles she carried with her — active listening, thorough preventative care, state-of-the-art technological intervention, and dedicated empathy — became the foundational pillars of her medical practice.
           </p>
 
           <p id="bio-p2">
-            She completed her medical training and earned her MBBS degree with honors in Surat, followed by a dedicated post-graduate residency in clinical dermatology, venereology, and leprosy (MD, D.V.L). Throughout her medical post-graduation, she realized that standard dermatology and skin care treatments often overlooked individualised skin barrier qualities. In 2021, she established Skin Square Clinic in Vesu, Surat to offer customized, board-certified aesthetic skin care under strict medical standards.
+            She completed her clinical training and earned her Medical Degree in Surat with outstanding honors, before pursuing advanced specializations in clinical dermatology, venereology, and laser technologies. With multiple board certifications and specialized training under elite aesthetic teachers, Dr. Patel envisioned a modern suite where professional skin health was treated with safety, precision, and state-of-the-art medical lasers.
           </p>
 
           <p id="bio-p3">
-            What started as a dedicated elite aesthetic practice quickly earned trust in Surat. Patients found a space where skin treatments were designed around their physiological profile, utilizing state-of-the-art non-surgical laser procedures and personalized cellular formulations. Over the years, Skin Square has evolved into an exceptional local benchmark for advanced dermatology, laser pigmentation corrective care, and clinical anti-aging therapies.
+            In 2015, she established MIDAS SKIN HAIR & LASER CLINIC in Surat, Gujarat, starting as a focused specialty practice. Her vision for premium, personalized skin care and unhurried medical evaluation quickly resonated with the Gujarat community, leading to the establishment of our premier, spacious suite at Velocity Business Hub with advanced FDA-approved laser treatments.
           </p>
 
           <p id="bio-p4">
-            Her clinical philosophy is defined by her complete refusal of formulaic, rushed consultations. She does not merely prescribe products; she listens closely to patient lifestyle histories, treating skin health and cellular renewal as an elegant medical craft. For her, cutting-edge aesthetic technology is a powerful tool to restore natural skin vitality, bringing patients back to their most radiant self.
+            Her medical philosophy is defined by a complete refusal of rushed, conveyor-belt medical sessions. Instead, Dr. Patel emphasizes comprehensive conversations, ensuring your specific skin history, genetic indicators, and lifestyle factors guide every custom laser or therapeutic program. Under her guidance, MIDAS has integrated medical dermatology, non-invasive hair solutions, corrective skin resurfacing, and nourishing aesthetic facials into one of the region's elite centers.
           </p>
         </div>
       </section>

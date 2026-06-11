@@ -32,7 +32,7 @@ export default function Header({ activeTab, setActiveTab }: HeaderProps) {
           onClick={() => handleNavClick('INDEX')}
           className="font-serif text-xl tracking-tight text-brand-primary font-medium hover:opacity-80 transition-opacity"
         >
-          Skin Square<span className="text-brand-accent">.</span>
+          Midas Skin Clinic<span className="text-brand-accent">.</span>
         </button>
 
         {/* Center Desktop Navigation */}
