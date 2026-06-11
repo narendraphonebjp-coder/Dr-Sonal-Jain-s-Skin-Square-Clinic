@@ -1,6 +1,5 @@
 import { motion } from 'motion/react';
-
-const drMonicaImage = "/src/assets/images/dr_monica_perlman_1781160073883.png";
+import drMonicaImage from '../assets/images/dr_monica_perlman_1781160073883.png';
 
 export default function Biography() {
   const events = [

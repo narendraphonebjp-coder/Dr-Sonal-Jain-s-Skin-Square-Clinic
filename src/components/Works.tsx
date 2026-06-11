@@ -1,8 +1,7 @@
 import { motion } from 'motion/react';
 import BeforeAfterSlider from './BeforeAfterSlider';
 import { ArrowRight } from 'lucide-react';
-
-const skinComparisonImage = "/src/assets/images/skin_aesthetic_care_1781160113979.png";
+import skinComparisonImage from '../assets/images/skin_aesthetic_care_1781160113979.png';
 
 interface WorksProps {
   onConsultationClick: () => void;

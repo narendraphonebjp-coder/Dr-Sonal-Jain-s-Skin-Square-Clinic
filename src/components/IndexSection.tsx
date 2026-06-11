@@ -2,10 +2,9 @@ import { motion } from 'motion/react';
 import { ArrowRight } from 'lucide-react';
 import BeforeAfterSlider from './BeforeAfterSlider';
 
-// Import local image artifacts
-const drMonicaImage = "/src/assets/images/dr_monica_perlman_1781160073883.png";
-const clinicInteriorImage = "/src/assets/images/clinic_interior_1781160092917.png";
-const skinComparisonImage = "/src/assets/images/skin_aesthetic_care_1781160113979.png";
+import drMonicaImage from '../assets/images/dr_monica_perlman_1781160073883.png';
+import clinicInteriorImage from '../assets/images/clinic_interior_1781160092917.png';
+import skinComparisonImage from '../assets/images/skin_aesthetic_care_1781160113979.png';
 
 interface IndexSectionProps {
   onConsultationClick: () => void;
